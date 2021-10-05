@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第1节：UnitTest测试框架 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PT.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter1/wbselect.html">
+            
+                <a href="../Chapter1/wbselect.html">
+            
+                    
+                    第1节：web自动化工具的选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter1/SEInstall.html">
+            
+                <a href="../Chapter1/SEInstall.html">
+            
+                    
+                    第2节：selenium IDE安装和运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    第二章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter2/wbgs.html">
+            
+                <a href="../Chapter2/wbgs.html">
+            
+                    
+                    第1节：webdrive概述、环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter2/elementfind.html">
+            
+                <a href="../Chapter2/elementfind.html">
+            
+                    
+                    第2节：元素定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter2/xct.html">
+            
+                <a href="../Chapter2/xct.html">
+            
+                    
+                    第3节：元素定位-xpath、css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter2/elementuse.html">
+            
+                <a href="../Chapter2/elementuse.html">
+            
+                    
+                    第4节：元素操作|浏览器操作方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter3/mk.html">
+            
+                <a href="../Chapter3/mk.html">
+            
+                    
+                    第1节：Webdirve鼠标操作、键盘操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter3/elementwait.html">
+            
+                <a href="../Chapter3/elementwait.html">
+            
+                    
+                    第2节：元素等待
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter3/other.html">
+            
+                <a href="../Chapter3/other.html">
+            
+                    
+                    第3节：处理表单、下拉列表、处理弹框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Chapter3/other1.html">
+            
+                <a href="../Chapter3/other1.html">
+            
+                    
+                    第4节：屏幕截图、定位frame、执行行JavaScript脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第四章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="UT.html">
+            
+                <a href="UT.html">
+            
+                    
+                    第1节：UnitTest测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="PT.html">
+            
+                <a href="PT.html">
+            
+                    
+                    第2节：Pytest测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="datadepart.html">
+            
+                <a href="datadepart.html">
+            
+                    
+                    第3节：数据分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="continue.html">
+            
+                <a href="continue.html">
+            
+                    
+                    第4节：持续集成和交付
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第1节：UnitTest测试框架</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;1&#x8282;&#xFF1A;unittest&#x6D4B;&#x8BD5;&#x6846;&#x67B6;">&#x7B2C;1&#x8282;&#xFF1A;UnitTest&#x6D4B;&#x8BD5;&#x6846;&#x67B6;</h1>
+<h1 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h1>
+<ul>
+<li><p>[x] &#x4E86;&#x89E3;UnitTest&#x6846;&#x67B6;&#x7684;&#x57FA;&#x672C;&#x7EC4;&#x6210;</p>
+</li>
+<li><p>[x] &#x719F;&#x6089;UnitTest&#x4E94;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF1A;test fixture&#x3001;test case&#x3001;test suite&#x3001;test runner&#x3001;test loader</p>
+</li>
+<li><p>[x] &#x5229;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x751F;&#x6210;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;</p>
+</li>
+</ul>
+<hr>
+<h1 id="1&#x4EC0;&#x4E48;&#x662F;unittest&#xFF1F;">1.&#x4EC0;&#x4E48;&#x662F;unittest&#xFF1F;</h1>
+<p>   unittest&#x662F;Python&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;Junit&#x6846;&#x67B6;</p>
+<p>   unittest&#x4E2D;&#x6709;5&#x4E2A;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#xFF1A;test fixture,test case&#x3001;test suite&#x3001;test runner&#x3001;test loader</p>
+<h1 id="2unittest&#x6982;&#x5FF5;&#x89E3;&#x91CA;">2.unittest&#x6982;&#x5FF5;&#x89E3;&#x91CA;</h1>
+<p>&#x200B;    ~Testcase</p>
+<p>&#x200B;            &#x4E00;&#x4E2A;TestCase&#x7684;&#x5B9E;&#x4F8B;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;&#xFF0C;&#x5305;&#x62EC;&#x524D;&#x671F;&#x51C6;&#x5907;&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;&#xFF08;setup&#xFF09;&#xFF0C;&#x6267;&#x884C;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#xFF08;run&#xFF09;,&#x4EE5;&#x53CA;&#x6D4B;&#x8BD5;&#x540E;&#x73AF;&#x5883;&#x7684;&#x8FD8;&#x539F;&#xFF08;tearDown&#xFF09;.&#x901A;&#x8FC7;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x67D0;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</p>
+<p>&#x200B;    ~Test suite</p>
+<p>&#x200B;            &#x591A;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x96C6;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5C31;&#x662F;TestSuite,&#x800C;&#x4E14;TestSuit&#x4E5F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;TestSuite&#x3002;</p>
+<p>&#x200B;    ~Test runner</p>
+<p>&#x200B;            &#x7528;&#x6765;&#x6267;&#x884C;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x7684;&#xFF0C;&#x5176;&#x4E2D;run&#xFF08;test&#xFF09;&#x4F1A;&#x6267;&#x884C;TestSuite/TestCase&#x4E2D;&#x7684;run&#xFF08;result&#xFF09;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x200B;    ~TestLoader</p>
+<p>&#x200B;            &#x7528;&#x6765;&#x52A0;&#x8F7D;TestCase&#x5230;TestSuite&#x4E2D;&#x7684;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x51E0;&#x4E2A;loadTestsFrom_()&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x662F;&#x4ECE;&#x5404;&#x4E2A;&#x5730;&#x65B9;&#x5BFB;&#x627E;TestCase&#xFF0C;&#x521B;&#x5EFA;&#x5B83;&#x4EEC;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;add&#x5230;TestSuite&#x4E2D;&#xFF0C;&#x518D;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;TestSuite&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>   ~Test fixture</p>
+<p>&#x200B;            &#x5BF9;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x7684;&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;&#x548C;&#x9500;&#x6BC1;&#xFF0C;&#x4E00;&#x4E2A;fixture&#xFF0C;&#x901A;&#x8FC7;&#x8986;&#x76D6;TestCase&#x7684;setup()&#x548C;tearDown()&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h1 id="3unittest&#x4E2D;&#x7684;&#x65B9;&#x6CD5;">3.unittest&#x4E2D;&#x7684;&#x65B9;&#x6CD5;</h1>
+<p>&#x200B;    ~setup &#x548C;teardown</p>
+<p>&#x200B;    &#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF1B;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x6BCF;&#x6B21;&#x8FD0;&#x884C;&#x7528;&#x4F8B;&#x90FD;&#x6267;&#x884C;</p>
+<p>&#x200B;    &#x6267;&#x884C;&#x987A;&#x5E8F;</p>
+<p>&#x200B;    setUpClass -&gt;setUp-&gt;testA-&gt;tearDown-&gt;setUp-&gt;testB-&gt;tearDown-&gt;tearDownClass</p>
+<p>&#x200B;    &#x7528;&#x4F8B;&#x4E4B;&#x95F4;&#x6309;&#x7528;&#x4F8B;&#x540D;&#x79F0;ASCIl&#x7801;&#x7684;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;&#xFF0C;&#x6570;&#x5B57;&#x548C;&#x5B57;&#x6BCD;&#x7684;&#x987A;&#x5E8F;&#x4E3A;0-9&#xFF0C;A-Z&#xFF0C;a-z</p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x68C0;&#x67E5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assertEqual(a,b)</td>
+<td>a==b</td>
+</tr>
+<tr>
+<td>assertNotEqual(a,b)</td>
+<td>a!=b</td>
+</tr>
+<tr>
+<td>assertTrue(x)</td>
+<td>bool(x) is True</td>
+</tr>
+<tr>
+<td>assertFalse(x)</td>
+<td>Bool(x) is False</td>
+</tr>
+<tr>
+<td>assertls(a,b)</td>
+<td>a is b</td>
+</tr>
+<tr>
+<td>assertlsNot(a,b)</td>
+<td>a is not b</td>
+</tr>
+<tr>
+<td>assertlsNotNone(x)</td>
+<td>x is None</td>
+</tr>
+<tr>
+<td>assertlsNotNone(x)</td>
+<td>x is not None</td>
+</tr>
+<tr>
+<td>assertln(a,b)</td>
+<td>a in b</td>
+</tr>
+<tr>
+<td>assertNotln(a,b)</td>
+<td>a not in b</td>
+</tr>
+<tr>
+<td>assertlslnstance(a,b)</td>
+<td>isinstance(a,b)</td>
+</tr>
+<tr>
+<td>assertNotlslnstance(a,b)</td>
+<td>not isinstance(a,b)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="unittest&#x4E2D;&#x7528;&#x4F8B;&#x52A0;&#x8F7D;&#x65B9;&#x6CD5;">UnitTest&#x4E2D;&#x7528;&#x4F8B;&#x52A0;&#x8F7D;&#x65B9;&#x6CD5;</h1>
+<h2 id="&#x65B9;&#x6CD5;1&#xFF1A;unittestmain">&#x65B9;&#x6CD5;1&#xFF1A;unittest.main()</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span>  selenium <span class="hljs-keyword">import</span>  webdriver
+<span class="hljs-keyword">import</span>  unittest
+
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setUp</span><span class="hljs-params">(self)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        <span class="hljs-comment">#&#x5B9E;&#x4F8B;&#x5316;&#x6D4F;&#x89C8;&#x5668;</span>
+        self.driver=webdriver.Chrome()
+        <span class="hljs-comment">#url</span>
+        self.driver.get(<span class="hljs-string">&apos;https://www.baidu.com/&apos;</span>)
+        <span class="hljs-comment">#&#x7A97;&#x53E3;&#x6700;&#x5927;&#x5316;</span>
+        self.driver.maximize_window()
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#&#x5224;&#x65AD;&#x767E;&#x5EA6;&#x7684;title</span>
+        title=self.driver.title
+        <span class="hljs-comment">#&#x65AD;&#x8A00;</span>
+        <span class="hljs-keyword">try</span>:
+            self.assertEqual(<span class="hljs-string">&apos;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&#xFF0C;&#x4F60;&#x5C31;&#x77E5;&#x9053;&apos;</span>,title)
+        <span class="hljs-keyword">except</span> AssertionError <span class="hljs-keyword">as</span> e:
+            print(e)
+            <span class="hljs-keyword">raise</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tearDown</span><span class="hljs-params">(self)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        self.driver.close()
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    unittest.main()
+</code></pre>
+<h2 id="&#x65B9;&#x6CD5;2&#xFF1A;unittesttexttestrunnerrunsuite">&#x65B9;&#x6CD5;2&#xFF1A;unittest.TextTestRunner().run(suite)</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span>  unittest
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setUp</span><span class="hljs-params">(self)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        print(<span class="hljs-string">&quot;---------Test demo start---------&quot;</span>)
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test01</span><span class="hljs-params">(self)</span>:</span>
+        a,b=<span class="hljs-number">1</span>,<span class="hljs-number">2</span>
+        a,b=b,a
+        <span class="hljs-comment">#&#x65AD;&#x8A00;</span>
+        <span class="hljs-keyword">assert</span> a==<span class="hljs-number">2</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test02</span><span class="hljs-params">(self)</span>:</span>
+
+        a,b=<span class="hljs-number">1</span>,<span class="hljs-number">2</span>
+        <span class="hljs-comment">#&#x65AD;&#x8A00;</span>
+        <span class="hljs-keyword">assert</span>  a+b==<span class="hljs-number">3</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tearDown</span><span class="hljs-params">(self)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        print(<span class="hljs-string">&quot;---------Test demo end---------&quot;</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_suit</span><span class="hljs-params">()</span>:</span>
+    suit=unittest.TestSuite()
+    suit.addTest(Test(<span class="hljs-string">&quot;test01&quot;</span>))
+    suit.addTest(Test(<span class="hljs-string">&quot;test02&quot;</span>))
+    unittest.TestRunner().run(suit)
+</code></pre>
+<h2 id="&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;runnerdiscover">&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;runner.discover()</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> unittest
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+
+    <span class="hljs-comment">#&#x8C03;&#x7528;unittest&#x4E2D;defaultTestLoader&#x4E2D;discover&#x65B9;&#x6CD5;</span>
+    dis=unittest.defaultTestLoader.discover(<span class="hljs-string">&apos;./&apos;</span>,pattern=<span class="hljs-string">&apos;demo*.py&apos;</span>)
+    <span class="hljs-comment">#&#x5B9E;&#x4F8B;&#x5316;&#x8FD0;&#x884C;</span>
+    runner=unittest.TextTestRunner()
+    runner.run(dis)
+</code></pre>
+<h1 id="&#x6DFB;&#x52A0;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;">&#x6DFB;&#x52A0;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;</h1>
+<p>&#x200B;    &#x901A;&#x8FC7;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;<a href="https://pypi.org/project/unittestreport/" target="_blank">unittestreport</a> &#x8FDB;&#x884C;&#x6DFB;&#x52A0;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;</p>
+<p>1.&#x4EC0;&#x4E48;&#x662F;unittestreport</p>
+<p>&#x200B;    unittestreport&#x662F;&#x57FA;&#x4E8E;unittest&#x5F00;&#x53D1;&#x7684;&#x7684;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x6269;&#x5C55;&#x5E93;&#xFF0C;&#x5173;&#x4E8E;unittestreport&#x6700;&#x521D;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6700;&#x521D;&#x53EA;&#x662F;&#x8BA1;&#x5212;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;unittest&#x751F;&#x6210;html&#x6D4B;&#x8BD5;&#x62A5;&#x544A;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6240;&#x4EE5;&#x8D77;&#x540D;&#x53EB;&#x505A;unittestreport&#x3002;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x8005;&#x7684;&#x53CD;&#x9988;&#xFF0C;&#x6162;&#x6162;&#x7684;&#x6269;&#x5C55;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x529F;&#x80FD;&#x8FDB;&#x53BB;&#x3002;&#x540E;&#x7EED;&#x8FD8;&#x4F1A;&#x6301;&#x7EED;&#x7684;&#x6269;&#x5C55;&#x548C;&#x5F00;&#x53D1;&#x4E00;&#x4E9B;&#x65B0;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x76EE;&#x524D;&#x5B9E;&#x73B0;&#x4E86;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>HTML&#x6D4B;&#x8BD5;&#x62A5;&#x544A;&#x751F;&#x6210;</li>
+<li>unittest&#x6570;&#x636E;&#x9A71;&#x52A8;</li>
+<li>&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x5931;&#x8D25;&#x91CD;&#x8FD0;&#x884C;</li>
+<li>&#x591A;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x7528;&#x4F8B;</li>
+<li>&#x53D1;&#x9001;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x53CA;&#x62A5;&#x544A;&#x5230;&#x90AE;&#x7BB1;</li>
+<li>&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x63A8;&#x9001;&#x5230;&#x9489;&#x9489;</li>
+<li>&#x6D4B;&#x8BD5;&#x7ED3;&#x6784;&#x63A8;&#x9001;&#x5230;&#x4F01;&#x4E1A;&#x5FAE;&#x4FE1;</li>
+</ul>
+<p>2.&#x5B89;&#x88C5;unittestreport &#x5E93;</p>
+<pre><code>pip install unittestreport
+</code></pre><p>3.&#x4F7F;&#x7528;TestRunner&#x6A21;&#x5757;&#x751F;&#x6210;HTML&#x62A5;&#x544A;</p>
+<pre><code class="lang-python"><span class="hljs-string">&quot;&quot;&quot;
+&#x5173;&#x4E8E;Testrunner&#x65B9;&#x6CD5;&#x53C2;&#x6570;
+
+:param filename: &#x62A5;&#x544A;&#x6587;&#x4EF6;&#x540D;
+:param title:&#x6D4B;&#x8BD5;&#x5957;&#x4EF6;&#x6807;&#x9898;
+:param templates: &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x503C;1&#x6216;&#x8005;2&#xFF0C;&#x6307;&#x5B9A;&#x62A5;&#x544A;&#x7684;&#x6837;&#x5F0F;&#x6A21;&#x677F;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x6A21;&#x677F;
+:param tester:&#x6D4B;&#x8BD5;&#x8005;
+
+&quot;&quot;&quot;</span>
+
+
+<span class="hljs-keyword">import</span>  unittest,time
+<span class="hljs-keyword">from</span> unittestreport  <span class="hljs-keyword">import</span>  TestRunner
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+
+    <span class="hljs-comment">#&#x7EC4;&#x7EC7;&#x6D4B;&#x8BD5;&#x5957;&#x4EF6;</span>
+    dis=unittest.defaultTestLoader.discover(<span class="hljs-string">&apos;./&apos;</span>,pattern=<span class="hljs-string">&apos;demo*.py&apos;</span>)
+    <span class="hljs-comment">#&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x8DEF;&#x5F84;</span>
+    dir_path= <span class="hljs-string">&apos;./Reports&apos;</span>
+    <span class="hljs-comment">#&#x65F6;&#x95F4;&#x6233;</span>
+    nowtime=time.strftime(<span class="hljs-string">&quot;%Y_%m_%d %H_%M_%S&quot;</span>)
+    file_name=dir_path+nowtime+<span class="hljs-string">&apos;report.html&apos;</span>
+
+    <span class="hljs-keyword">with</span> open(file_name,<span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> f:
+        <span class="hljs-comment">#&#x5B9E;&#x4F8B;&#x5316;</span>
+        TestRunner(dis,filename=file_name,title=<span class="hljs-string">&quot;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x62A5;&#x544A;&quot;</span>,tester=<span class="hljs-string">&quot;lw&quot;</span>).run()
+</code></pre>
+<p><img src="../img/csbg1.png" alt=""></p>
+<p><img src="../img/csbg2.png" alt=""></p>
+<p><img src="../img/csbg3.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第四章">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PT.html" class="navigation navigation-next " aria-label="Next page: 第2节：Pytest测试框架">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第1节：UnitTest测试框架","level":"1.5.1","depth":2,"next":{"title":"第2节：Pytest测试框架","level":"1.5.2","depth":2,"path":"Chapter4/PT.md","ref":"Chapter4/PT.md","articles":[]},"previous":{"title":"第四章","level":"1.5","depth":1,"path":"Chapter4/README.md","ref":"Chapter4/README.md","articles":[{"title":"第1节：UnitTest测试框架","level":"1.5.1","depth":2,"path":"Chapter4/UT.md","ref":"Chapter4/UT.md","articles":[]},{"title":"第2节：Pytest测试框架","level":"1.5.2","depth":2,"path":"Chapter4/PT.md","ref":"Chapter4/PT.md","articles":[]},{"title":"第3节：数据分离","level":"1.5.3","depth":2,"path":"Chapter4/datadepart.md","ref":"Chapter4/datadepart.md","articles":[]},{"title":"第4节：持续集成和交付","level":"1.5.4","depth":2,"path":"Chapter4/continue.md","ref":"Chapter4/continue.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter4/UT.md","mtime":"2021-10-05T12:11:26.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-05T12:12:25.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
